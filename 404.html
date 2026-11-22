@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pagina nu a fost găsită — eSolar</title>
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="Pagina căutată nu există." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Theme before first paint: ?theme= link > saved choice > device setting.
+      (function () {
+        var t = new URLSearchParams(location.search).get('theme');
+        try { t = t || localStorage.getItem('esolar-theme'); } catch (e) {}
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/layout-C6jIOJP9.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/layout-DVrfpfRm.css">
+    <link rel="stylesheet" crossorigin href="./assets/contact-CB5JpcL7.css">
+  </head>
+  <body class="has-hero page-404">
+    <main>
+      <section class="hero nf">
+        <div class="hero__frame">
+          <div class="hero__bg"><img src="img/landscape.jpg" alt="" /></div>
+          <div class="nf__inner">
+            <span class="nf__code" aria-hidden="true">404</span>
+            <h1 data-en="This page is off-grid.">Pagina asta e off-grid.</h1>
+            <p data-en="We couldn't find what you were looking for. Maybe the link is old, or the page has moved. These will get you back on the grid:">Nu am găsit ce căutai. Poate linkul e vechi sau pagina s-a mutat. De aici te reconectezi la rețea:</p>
+            <a class="btn-pair btn-pair--light" href="./"><span class="btn" data-en="Back to home">Înapoi acasă</span><span class="btn-pair__arrow" aria-hidden="true">↗</span></a>
+            <nav class="nf__links" aria-label="Pagini populare" data-en-aria="Popular pages">
+              <a href="rezidential.html" data-en="Solar for homes">Solar pentru case</a>
+              <a href="comercial.html" data-en="Solar for business">Solar pentru firme</a>
+              <a href="kituri.html" data-en="Kits">Kituri</a>
+              <a href="proiecte.html" data-en="Projects">Proiecte</a>
+              <a href="contact.html" data-en="Free quote">Ofertă gratuită</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

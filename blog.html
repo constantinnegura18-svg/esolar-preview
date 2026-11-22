@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog și ghiduri — eSolar</title>
+    <meta name="description" content="Ghiduri clare despre panouri fotovoltaice, baterii, Casa Verde și statutul de prosumator, de la echipa eSolar." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Theme before first paint: ?theme= link > saved choice > device setting.
+      (function () {
+        var t = new URLSearchParams(location.search).get('theme');
+        try { t = t || localStorage.getItem('esolar-theme'); } catch (e) {}
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/layout-C6jIOJP9.js"></script>
+    <script type="module" crossorigin src="./assets/blog-DCyV94ja.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/layout-DVrfpfRm.css">
+    <link rel="stylesheet" crossorigin href="./assets/rez-BCdHy90a.css">
+    <link rel="stylesheet" crossorigin href="./assets/blog-Bu27HRKj.css">
+  </head>
+  <body class="page-blog">
+    <main>
+      <section class="blog-head">
+        <div class="wrap blog-head__inner">
+          <div>
+            <span class="eyebrow" data-en="Blog and guides">Blog și ghiduri</span>
+            <h1 data-en-html="Clear answers,<br>before you decide.">Răspunsuri clare,<br>înainte să decizi.</h1>
+          </div>
+          <p class="lead" data-en="Funding, batteries, real production figures and prosumer paperwork, explained by the people who install it every day.">Finanțări, baterii, cifre reale de producție și actele de prosumator, explicate de oamenii care montează în fiecare zi.</p>
+        </div>
+      </section>
+      <section style="padding-bottom: var(--section)">
+        <div class="wrap">
+          <div class="blog-cats" id="blogCats" role="group" aria-label="Categorii" data-en-aria="Categories"></div>
+          <div id="blogList" aria-live="polite"></div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="section">
+        <div class="wrap">
+          <div class="cta on-dark reveal">
+            <div class="media"><img src="img/fields.jpg" alt="" loading="lazy" /></div>
+            <div>
+              <h2 class="h-lg" data-en="Let's see how much you could save.">Hai să vedem cât poți economisi.</h2>
+              <p data-en="Send us your latest bill. A free, no-obligation offer within 24 hours.">Trimite-ne ultima factură. Primești o ofertă gratuită, fără obligații, în 24 de ore.</p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn-pair btn-pair--light" href="contact.html"><span class="btn" style="flex: 1" data-en="Get a free quote">Cere ofertă gratuită</span><span class="btn-pair__arrow" aria-hidden="true">↗</span></a>
+              <p class="cta__phone"><span data-en="or call">sau sună la</span> <a href="tel:+40733365765">0733 365 765</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>

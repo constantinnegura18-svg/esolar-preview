@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Articol — eSolar</title>
+    <meta name="description" content="Ghid eSolar despre energie solară." />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0e14" media="(prefers-color-scheme: dark)" />
+    <script>
+      // Theme before first paint: ?theme= link > saved choice > device setting.
+      (function () {
+        var t = new URLSearchParams(location.search).get('theme');
+        try { t = t || localStorage.getItem('esolar-theme'); } catch (e) {}
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/layout-C6jIOJP9.js"></script>
+    <script type="module" crossorigin src="./assets/blog-DCyV94ja.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/layout-DVrfpfRm.css">
+    <link rel="stylesheet" crossorigin href="./assets/rez-BCdHy90a.css">
+    <link rel="stylesheet" crossorigin href="./assets/blog-Bu27HRKj.css">
+  </head>
+  <body class="has-hero page-article">
+    <div class="reading-bar" id="readingBar" aria-hidden="true"></div>
+    <main>
+      <section class="hero art-hero">
+        <div class="hero__frame">
+          <div class="hero__bg"><img id="artCover" src="img/fields.jpg" alt="" fetchpriority="high" /></div>
+          <div class="art-hero__inner">
+            <div class="crumbs"><a href="blog.html">Blog</a> / <span id="artCat"></span></div>
+            <h1 id="artTitle"></h1>
+            <div id="artMeta"></div>
+          </div>
+        </div>
+      </section>
+      <article class="wrap art" id="article">
+        <nav class="toc" id="artToc" aria-label="Cuprins" data-en-aria="Contents"></nav>
+        <div class="prose" id="artBody"></div>
+      </article>
+      <section class="section section--alt">
+        <div class="wrap">
+          <div class="section-head section-head--split reveal">
+            <div>
+              <span class="eyebrow" data-en="Keep reading">Citește mai departe</span>
+              <h2 class="h-lg" data-en="More guides.">Alte ghiduri.</h2>
+            </div>
+            <a class="link-arrow" href="blog.html"><span data-en="All articles">Toate articolele</span><span class="arrow">↗</span></a>
+          </div>
+          <div class="blog-grid" id="artRelated"></div>
+        </div>
+      </section>
+      <!-- CTA -->
+      <section class="section">
+        <div class="wrap">
+          <div class="cta on-dark reveal">
+            <div class="media"><img src="img/fields.jpg" alt="" loading="lazy" /></div>
+            <div>
+              <h2 class="h-lg" data-en="Let's see how much you could save.">Hai să vedem cât poți economisi.</h2>
+              <p data-en="Send us your latest bill. A free, no-obligation offer within 24 hours.">Trimite-ne ultima factură. Primești o ofertă gratuită, fără obligații, în 24 de ore.</p>
+            </div>
+            <div class="cta__actions">
+              <a class="btn-pair btn-pair--light" href="contact.html"><span class="btn" style="flex: 1" data-en="Get a free quote">Cere ofertă gratuită</span><span class="btn-pair__arrow" aria-hidden="true">↗</span></a>
+              <p class="cta__phone"><span data-en="or call">sau sună la</span> <a href="tel:+40733365765">0733 365 765</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
